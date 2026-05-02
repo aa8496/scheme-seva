@@ -1,0 +1,16 @@
+Backend routes layout
+=====================
+
+routes/
+  index.js          -> mounts /api/v1 and /api/v2
+  v1/
+    index.js        -> wires users, schemes (legacy), applications, admin, etc.
+    users.routes.js
+    schemes.routes.js      (legacy Scheme model)
+    applications.routes.js
+    admin.routes.js
+    recommendations.routes.js
+    chatbot.routes.js
+  v2/
+    index.js
+    schemes.routes.js      (catalogue / Schemesv2)
